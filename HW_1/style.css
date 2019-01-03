@@ -1,45 +1,45 @@
-* {
+body {
     width: 1280px;
-   /* height: 1626px;*/
-
+    height: 1626px;
+    font-family: Roboto, serif;
 }
-#main {
+#bg {
     background: #f5f6f7;
 }
-span {
-    font-family: Roboto;
+a {
+    display: inline-block;
     color:  #16a085;
     font-size: 18px;
     font-weight: 900;
     /*line-height: 400px;*/
     text-align: left;
-    margin: 10px;
+    margin: 20px 20px;
+    text-decoration: none;
 }
 .header {
     text-align: center;
 }
-.body {
+.main {
     width: 1280px;
     height: 790px;
+    display: inline;
 
 }
 .footer {
-    font-family: Roboto;
     color:  #373737;
     font-size: 16px;
     font-weight: 900;
-    text-align: left;
+    text-align: right;
+    margin-top: 10px;
+
 }
 div h1 {
-    font-family: Roboto;
     color:  #373737;
     font-size: 22px;
     font-weight: 900;
-
-
+    text-transform: uppercase;
 }
-#text {
-    font-family: Roboto;
+.text {
     color:  #373737;
     font-size: 16px;
     font-weight: 900;
@@ -52,7 +52,16 @@ div button {
     background-color:  #16a085;
     width: 192px;
     height: 51px;
+    font-family: GothamRounded, sans-serif;
+    color:  #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
 }
 #content {
     text-align: center;
+}
+span {
+    display: inline-block;
 }
