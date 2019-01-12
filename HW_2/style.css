@@ -1,0 +1,50 @@
+body{
+    width: 1280px;
+    font-family: 'Myriad Pro', monospace;
+    /*position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;*/
+    }
+body:before {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+}
+.body{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+.logo {
+        color:  #000000;
+    font-size: 80px;
+    font-weight: 400;
+    text-align: left;
+}
+span {
+    color:  #4bcaff;
+}
+.header{
+    background-color:  #35444f;
+    width: 1280px;
+    height: 69px;
+    text-align: center;
+
+}
+.headeritem {
+    display: inline-block;
+    color:  #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    height: 69px;
+    margin: 18px 50px 0 50px;
+}
+.headeritem:hover{
+    background-color:  #222f3a;
+   }
