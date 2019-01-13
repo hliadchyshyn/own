@@ -1,33 +1,32 @@
 body{
-    width: 1280px;
-    font-family: 'Myriad Pro', monospace;
-    /*position: absolute;
+
+    font-family: 'Myriad Pro',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    margin: auto;*/
-    }
-body:before {
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    content: '';
+    margin: auto;
 }
 .body{
     max-width: 100%;
+    width: 1280px;
     height: auto;
     display: block;
     margin: 0 auto;
     border: none;
+    padding: 0 100px;
 }
 .logo {
-        color:  #000000;
+    color:  #000000;
     font-size: 80px;
     font-weight: 400;
     text-align: left;
+    padding-bottom: 45px;
 }
-span {
+.logo>span {
     color:  #4bcaff;
 }
 .header{
@@ -37,14 +36,114 @@ span {
     text-align: center;
 
 }
-.headeritem {
+.headeritem{
     display: inline-block;
     color:  #ffffff;
     font-size: 24px;
     font-weight: 400;
-    height: 69px;
-    margin: 18px 50px 0 50px;
+    height: 50px;
+    padding: 18px 50px 0 18px;
+
 }
 .headeritem:hover{
     background-color:  #222f3a;
    }
+.menu{
+    margin-top: 50px;
+    box-sizing: border-box;
+    /*width: 344px;*/
+    height: 399px;
+    border-style: solid;
+    border-color: #000000;
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+
+}
+.menuitem{
+    width: 342px;
+    height: 79px;
+    color:  #485863;
+    font-size: 26.99px;
+    line-height: 88.867px;
+    padding: 0 38px 0 40px;
+
+}
+.menuitem:hover{
+    background-color: #dcdcdc;
+    color:  #000000;
+    padding: 0 18px 0 60px;
+}
+.content{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 62%;
+    margin: 50px 0 0 58px;
+
+}
+.img{
+    border-style: solid;
+    border-color: #000000;
+    height: 529px;
+    position: relative;
+    text-align: center;
+    line-height: 198px;
+    background: url("img/Ramda.png") center;
+    background-size: 45%;
+    transition: background-size 0.5s;
+    background-repeat: no-repeat;
+
+
+}
+.img:hover {
+    background-size: 60%;
+}
+
+.centred{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.text{
+    color:  #2c2b2b;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.footer {
+    background-color: #b5b8bb;
+    width: 1280px;
+    height: 69px;
+
+
+    color: #0c1927;
+    font-size: 28px;
+    /*font-weight: 400;*/
+    line-height: 90px;
+
+}
+.footeritem {
+    display: inline-block;
+    margin: 0 0 0 20px;
+    text-align: left;
+}
+.footeritem:hover{
+    /* Встроенный стиль */
+     color:  #3181a6;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 90px;
+    text-align: left;
+    text-decoration: underline;
+}
+.copyright{
+    display: inline-block;
+    text-align: right;
+    margin-left: 140px;
+}
+
