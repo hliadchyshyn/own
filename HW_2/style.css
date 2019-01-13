@@ -3,22 +3,26 @@ body{
     font-family: 'Myriad Pro',sans-serif;
     font-style: normal;
     font-weight: 300;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+
 }
-.body{
-    max-width: 100%;
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+a:active, a:visited, a:link{
+    color:  #000000;
+}
+
+.container{
     width: 1280px;
-    height: auto;
-    display: block;
     margin: 0 auto;
-    border: none;
-    padding: 0 100px;
 }
+
 .logo {
     color:  #000000;
     font-size: 80px;
@@ -26,9 +30,11 @@ body{
     text-align: left;
     padding-bottom: 45px;
 }
-.logo>span {
+
+.logo-decoration{
     color:  #4bcaff;
 }
+
 .header{
     background-color:  #35444f;
     width: 1280px;
@@ -36,7 +42,8 @@ body{
     text-align: center;
 
 }
-.headeritem{
+
+.header-item{
     display: inline-block;
     color:  #ffffff;
     font-size: 24px;
@@ -45,9 +52,17 @@ body{
     padding: 18px 50px 0 18px;
 
 }
-.headeritem:hover{
+
+.header-item:hover{
     background-color:  #222f3a;
-   }
+    cursor: pointer;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+}
+
 .menu{
     margin-top: 50px;
     box-sizing: border-box;
@@ -60,20 +75,24 @@ body{
     vertical-align: top;
 
 }
-.menuitem{
-    width: 342px;
+
+.menu-item{
     height: 79px;
     color:  #485863;
     font-size: 26.99px;
     line-height: 88.867px;
     padding: 0 38px 0 40px;
 
+
 }
-.menuitem:hover{
+
+.menu-item:hover{
     background-color: #dcdcdc;
     color:  #000000;
     padding: 0 18px 0 60px;
+    cursor: pointer;
 }
+
 .content{
     box-sizing: border-box;
     display: inline-block;
@@ -81,6 +100,7 @@ body{
     margin: 50px 0 0 58px;
 
 }
+
 .img{
     border-style: solid;
     border-color: #000000;
@@ -95,6 +115,7 @@ body{
 
 
 }
+
 .img:hover {
     background-size: 60%;
 }
@@ -119,28 +140,33 @@ body{
     background-color: #b5b8bb;
     width: 1280px;
     height: 69px;
-
-
     color: #0c1927;
     font-size: 28px;
     /*font-weight: 400;*/
     line-height: 90px;
 
 }
-.footeritem {
+
+.footer-list{
+    display: inline-block;
+}
+
+.footer-item {
     display: inline-block;
     margin: 0 0 0 20px;
-    text-align: left;
+    cursor: pointer;
 }
-.footeritem:hover{
-    /* Встроенный стиль */
-     color:  #3181a6;
+
+.footer-item:hover{
+    color:  #3181a6;
     font-size: 28px;
     font-weight: 400;
     line-height: 90px;
     text-align: left;
     text-decoration: underline;
+    cursor: pointer;
 }
+
 .copyright{
     display: inline-block;
     text-align: right;
