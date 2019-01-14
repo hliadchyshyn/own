@@ -22,6 +22,7 @@ a{
 }
 
 .logo-link{
+    float: left;
     color:  #ffffff;
     font-weight: 700;
     text-align: left;
@@ -57,7 +58,7 @@ a{
 }
 
 .contacts{
-    /*padding-left: 656px;*/
+    float: right;
     display: inline-block;
     color:  #ffffff;
     font-size: 18px;
@@ -121,12 +122,16 @@ a{
     width: 307px;
     height: 63px;
     background: #f26522;
-    bottom: 46px;
-    visibility: hidden;
+    bottom: 0;
+    transition: 0.5s;
+    overflow: hidden;
+    /*visibility: hidden;*/
+    transform: translate(0px,-25px) rotate(0deg) ; opacity: 0;
+
 }
 
 .layer-item:hover .details{
-    visibility: visible;
+   transform: translate(0px,-46px) rotate(0deg) ; opacity: 1;
 }
 
 .description-lower{
