@@ -115,6 +115,9 @@ a{
 
 .img-content{
     position: relative;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to top, transparent 0%, #ADF2F7 100%) 1;
+
 }
 
 .details{
