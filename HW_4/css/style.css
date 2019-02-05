@@ -1,6 +1,5 @@
 
 .main-container {
-    /*height: 768px;*/
     height: 100vh;
     font-family: Verdana, sans-serif, monospace;
     background: url("../img/rana-sawalha-364253-unsplash.svg") no-repeat;
@@ -72,7 +71,7 @@
 
 .content-wraper{
     display: flex;
-    height: 94%;
+    height: calc(100vh - 54px);
     align-items: center;
     justify-content: center;
 }
@@ -85,7 +84,7 @@
     background-color: #fff;
     border-radius: 12px;
     flex-direction: column;
-    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.52);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.52);
 
 }
 
@@ -205,9 +204,11 @@
     justify-content: center;
 }
 .text-input{
-    padding: 10px;
-    margin: 18px 50px 0px 50px;
+    /*padding: 13px;*/
+    padding-left: 13px;
+    margin: 11px 50px 0 50px;
     width: 300px;
+    height: 42px;
     border-radius: 3px;
     border: 1px solid #ebebeb;
 
@@ -248,7 +249,7 @@
 .control {
     position: relative;
     padding-left: 30px;
-    margin: 5px 0 26px 53px;
+    margin: 0 0 24px 53px;
     padding-top: 3px;
     cursor: pointer;
     color:  #434343;
