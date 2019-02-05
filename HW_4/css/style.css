@@ -36,13 +36,41 @@
     padding-right: 72px;
 }
 
-.ic-caledar {background: url("../img/Sprite.png")-0px -99px no-repeat; overflow: hidden; width: 19px; height: 19px;  margin-right: 28px;}
-.ic-caledar:hover {background-position: -0px -80px; width: 19px; height: 19px;  margin-right: 28px; transition: 0.3s; opacity: 0.6}
-.ic-forum {background: url("../img/Sprite.png") -0px -20px no-repeat; overflow: hidden; width: 28px; height: 20px; margin-right: 28px;}
-.ic-forum:hover { background-position: -0px -0px; width: 28px; height: 20px; margin-right: 28px; transition: 0.3s; opacity: 0.6}
-.ic-journey { background: url("../img/Sprite.png")  -0px -60px no-repeat; overflow: hidden;  width: 20px; height: 20px;}
-.ic-journey:hover { background-position: -0px -40px; width: 20px; height: 20px;  transition: 0.3s; opacity: 0.6}
-
+.ic-caledar {
+    background: url("../img/Sprite.png")-0px -99px no-repeat;
+    overflow: hidden;
+    width: 19px;
+    height: 19px;
+    margin-right: 28px;
+    transition: 0.2s;
+}
+.ic-caledar:hover {
+    background-position: -0px -80px;
+    opacity: 0.6
+}
+.ic-forum {
+    background: url("../img/Sprite.png") -0px -20px no-repeat;
+    overflow: hidden;
+    width: 28px;
+    height: 20px;
+    margin-right: 28px;
+    transition: 0.2s;
+}
+.ic-forum:hover {
+    background-position: -0px -0px;
+    opacity: 0.6
+}
+.ic-journey {
+    background: url("../img/Sprite.png")  -0px -60px no-repeat;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    transition: 0.2s
+}
+.ic-journey:hover {
+    background-position: -0px -40px;
+    opacity: 0.6
+}
 
 .hr-vertical-header{
     width: 1px;
@@ -271,12 +299,8 @@
     border-radius: 3px;
 }
 
-.control input:checked ~ .control_indicator:after {
-    display: block;
-}
-.control_indicator:after {
+.control_indicator::after {
     content: '';
-    position: absolute;
     left: 5px;
     top: 2px;
     width: 4px;
@@ -284,5 +308,10 @@
     border: solid #3cb878;
     border-width: 0 4px 4px 0;
     transform: rotate(45deg);
-
+    box-sizing: unset;
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
 }
