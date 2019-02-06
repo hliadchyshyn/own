@@ -51,7 +51,6 @@ tr, td {
     color:  #ffffff;
     font-weight: 700;
     line-height: 28px;
-    text-align: center;
 }
 .col2, .col4{
     font-size: 24px;
@@ -67,7 +66,7 @@ tr, td {
 }
 .text-row1{
     font-size: 18px;
-    margin-top: 26px;
+    margin-top: -12px;
 }
 .text-row2{
     font-size: 30px;
@@ -79,8 +78,8 @@ tr, td {
     line-height: 28px;
     float: left;
     margin-top: 25px;
-    margin-left: 26px;
-    margin-bottom: 35px;
+    margin-left: 34px;
+    margin-bottom: 31px;
 }
 .price-cent{
     color:  #484848;
@@ -89,7 +88,7 @@ tr, td {
     line-height: 28px;
     text-align: left;
     margin-left: 10px;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 .per-month{
     color:  #484848;
@@ -97,6 +96,7 @@ tr, td {
     font-weight: 400;
     line-height: 28px;
     text-align: left;
+    margin-top: -5px;
 }
 .row{
     height: 69px;
