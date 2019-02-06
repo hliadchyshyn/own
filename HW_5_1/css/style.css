@@ -64,11 +64,11 @@ tr, td {
     line-height: 28px;
     text-align: center;
 }
-.text-row1{
+.tbl-title-row1{
     font-size: 18px;
     margin-top: -12px;
 }
-.text-row2{
+.tbl-title-row2{
     font-size: 30px;
 }
 .price{
