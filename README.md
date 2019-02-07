@@ -1,1 +1,1 @@
-# HTML&CSS homeworks for PE_8
+# JS HTML&CSS homeworks for PE_8
