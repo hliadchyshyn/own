@@ -1,0 +1,45 @@
+body{
+    background: #000000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    perspective: 400px;
+    height: 800px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    line-height: 150%;
+    color: #feda4a;
+}
+
+.star-wars-intro{
+    position: relative;
+    top: -100px;
+    transform-origin: 50%100%;
+    animation: intro 60s linear;
+}
+
+@keyframes intro {
+    0%{
+        top: 0;
+        transform: translateZ(0) rotateX(30deg);
+    }
+    100%{
+        top: -6000px;
+        transform: translateZ(-2500px) rotateX(25deg);
+    }
+}
+
