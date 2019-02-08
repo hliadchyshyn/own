@@ -7,7 +7,7 @@ body{
 .fade {
     position: relative;
     width: 100%;
-    min-height: 60vh;
+    min-height: 53vh;
     top: -25px;
     background-image: linear-gradient(0deg, transparent, black 75%);
     z-index: 1;
@@ -27,8 +27,8 @@ body{
 
 .star-wars-intro{
     position: relative;
-    top: -100px;
-    transform-origin: 50%100%;
+    top: -150px;
+    transform-origin: 50% 100%;
     animation: intro 60s linear;
 }
 
