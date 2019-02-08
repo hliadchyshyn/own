@@ -29,7 +29,7 @@ body{
     position: relative;
     top: -150px;
     transform-origin: 50% 100%;
-    animation: intro 60s linear;
+    animation: intro 60s linear infinite;
 }
 
 @keyframes intro {
