@@ -82,7 +82,6 @@ td{
     color:  #484848;
     font-weight: 700;
     line-height: 28px;
-    text-align: center;
 }
 .tbl-title-row1{
     font-size: 14px;
@@ -94,35 +93,31 @@ td{
 .title{
     margin-top: -70px;
 }
-.price{
+
+.sub-title{
     color:  #ffffff;
-    display: inline-block;
-    font-size: 36px;
     font-weight: 700;
     line-height: 28px;
     text-align: center;
+}
+.price{
+
+    display: inline-block;
+    font-size: 36px;
     position: absolute;
     left: 21px;
     top: 15px;;
 }
 .price-cent{
     display: inline-block;
-    color:  #ffffff;
     font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: center;
     position: absolute;
     top: 12px;
     left: 60px;
 }
 .per-month{
     display: inline-block;
-    color:  #ffffff;
     font-size: 14px;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: center;
     position: absolute;
     top: 19px;
     left: 91px;
@@ -130,8 +125,6 @@ td{
 .link-button{
     color:  #ffffff;
     font-size: 16px;
-    font-weight: 700;
-    line-height: 28px;
     border-radius: 5px;
     background-color:  #414141;
     padding: 8px 33px;
@@ -175,17 +168,4 @@ td{
 }
 .header-title{
     margin-top: 10px;
-}
-
-
-.light-grey{
-    background-color:  #f2f2f2;
-}
-.dark-grey{
-    background-color:  #e3e3e3;
-}
-.footer{
-    text-align: center;
-    vertical-align: middle;
-    margin: 15px 0;
 }
