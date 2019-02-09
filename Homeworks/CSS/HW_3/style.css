@@ -15,22 +15,22 @@
 a{
     text-decoration: none;
 }
-.logo{
+.logo-container{
     float: left;
     display: inline-block;
     width: 1064px;
     height: 45px;
 }
 
-.logo-link {
+.logo {
     color:  #ffffff;
 }
 
-.logo-link:hover {
+.logo:hover {
     color:  #f26522;
 }
 
-.logo-link:hover .img-logo{
+.logo:hover .img-logo{
     background: url("images/logo-hover.svg");
 }
 

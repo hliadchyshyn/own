@@ -23,7 +23,7 @@ a:active, a:visited, a:link{
     margin: 0 auto;
 }
 
-.logo {
+.logo-container {
     color:  #000000;
     font-size: 80px;
     font-weight: 400;
