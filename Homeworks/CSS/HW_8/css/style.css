@@ -18,7 +18,7 @@ body {
 }
 
 .top-screen-wrapper {
-    background: url("../img/bg1.jpg") no-repeat;
+    background: url("../img/bg1.jpg") no-repeat fixed;
     background-size: cover;
 }
 
@@ -26,12 +26,14 @@ body {
     text-transform: uppercase;
     font-size: 48px;
     font-weight: 700;
+    transform-style: preserve-3d;
 }
 
 .top-screen-subtitle {
     text-transform: capitalize;
     font-size: 18px;
     margin-top: 15px;
+    transform-style: preserve-3d;
 }
 
 .top-screen-slogan {
@@ -82,7 +84,7 @@ body {
 
 .second-info-block {
     height: 380px;
-    background: url("../img/bg2.jpg") no-repeat center;
+    background: url("../img/bg2.jpg") no-repeat center fixed;
     background-size: cover;
     box-sizing: border-box;
     padding-top: 150px
@@ -105,7 +107,7 @@ body {
 }
 .fourth-info-block{
     height: 475px;
-    background: url("../img/bg3.jpg") no-repeat center;
+    background: url("../img/bg3.jpg") no-repeat center fixed;
     background-size: cover;
     box-sizing: border-box;
     padding-top: 174px
@@ -133,7 +135,7 @@ body {
 
 .sixth-info-block {
     height: 485px;
-    background: url("../img/bg4.jpg") no-repeat center;
+    background: url("../img/bg4.jpg") no-repeat center fixed;
     background-size: cover;
     box-sizing: border-box;
     padding-top: 130px
