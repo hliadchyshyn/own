@@ -116,6 +116,7 @@ body {
 .logo-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .logo1{
     margin-right: 54px;
