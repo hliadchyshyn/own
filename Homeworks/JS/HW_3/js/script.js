@@ -3,10 +3,10 @@ function factorial(n) {
 }
 function checkSimpleNumber(num){
     while (isNaN(Number (num))|| num === null || num < 0){
-        num = prompt('Enter correct start check number', num);
+        num = prompt('Enter correct number', num);
     }
     return Number(num);
 }
 
 let num = checkSimpleNumber (prompt('Enter your number',''));
-alert( factorial(num) );
+alert('Factorial of number '+num +' = '+factorial(num) );
