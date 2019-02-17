@@ -1,24 +1,25 @@
-let prop = {
-    SIZE_SMALL: {
+let propSize = {
+    SMALL: {
         price: 15,
         cal: 250,
     },
-    SIZE_LARGE: {
+    LARGE: {
         price: 25,
         cal: 340,
     },
-
-    STUFFING_CHEESE: {
+};
+let propStuff = {
+    CHEESE: {
         price: 4,
         cal: 25,
     },
-    STUFFING_SALAD: {
+    SALAD: {
         price: 5,
         cal: 5,
     },
-    STUFFING_BEEF:{
+    BEEF: {
         price: 10,
-        cal: 50,
+        cal: 50
     },
 };
 
@@ -27,27 +28,27 @@ function addResult({size, stuffing}){
     let resPrice =0;
     let resCal=0;
 
-    resPrice += prop[size].price;
-    resCal += prop[stuffing].price;
-    resPrice += prop[size].cal;
-    resCal += prop[stuffing].cal;
+    resPrice += propSize[size].price;
+    resCal += propStuff[stuffing].price;
+    resPrice += propSize[size].cal;
+    resCal += propStuff[stuffing].cal;
 
     return {price: resPrice, cal:resCal};
 }
 
 function validation(sizeToValidate, stuffingToValidate) {
-        while ((sizeToValidate === undefined|| sizeToValidate ==="" )|| (stuffingToValidate === undefined||stuffingToValidate ==="" )) {
-            if (sizeToValidate === undefined) {
-                sizeToValidate = prompt('Enter correct burger size', '');
-            } else {
-                stuffingToValidate = prompt('Enter correct burger stuffing', '');
+    while ((sizeToValidate === null || sizeToValidate ==="" ) || (stuffingToValidate === null || stuffingToValidate ==="" ) || !(sizeToValidate.toUpperCase() in propSize) || !(stuffingToValidate.toUpperCase() in propStuff)) {
+        if (sizeToValidate === null || sizeToValidate ===""  || !(sizeToValidate.toUpperCase() in propSize)) {
+            sizeToValidate = prompt('Enter correct burger size', '');
+        } else {
+            stuffingToValidate = prompt('Enter correct burger stuffing', '');
 
-            }
         }
-        return {size:sizeToValidate, stuffing:stuffingToValidate};
+    }
+
+
+    return {size:sizeToValidate.toUpperCase(), stuffing:stuffingToValidate.toUpperCase()};
 }
-
-
 
 function getBurgerPrice (size, stuffing) {
     let CorrectSizeStuffing = validation(size, stuffing);
@@ -56,9 +57,7 @@ function getBurgerPrice (size, stuffing) {
 
 }
 
-
-
-getBurgerPrice ((prompt('Enter  burger size', 'SIZE_SMALL or SIZE_LARGE')).toUpperCase(), (prompt('Enter  burger stuffing', 'STUFFING_CHEESE or STUFFING_SALAD or STUFFING_BEEF')).toUpperCase())
+getBurgerPrice (prompt('Enter  burger size', 'SMALL or LARGE'), prompt('Enter  burger stuffing', 'CHEESE or SALAD or BEEF'));
 
 
 
