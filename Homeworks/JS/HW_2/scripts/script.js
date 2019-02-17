@@ -27,8 +27,9 @@ function isNatural(num) {
 let startNumber = checkSimpleNumber (prompt('Enter your start check number',''));
 let endNumber = checkSimpleNumber (prompt('Enter your end check number',''));
 
-let i = (compareNums(startNumber, endNumber)).smaller;
-let k = (compareNums(startNumber, endNumber)).bigger;
+let compare = compareNums(startNumber, endNumber);
+let i = compare.smaller;
+let k = compare.bigger;
 
 for(i; i < k; i++){
     if(isNatural(i)) console.log(i);
