@@ -32,5 +32,5 @@ function validateName(name, message) {
     return name;
 }
 
-let user = createNewUser();
-console.log(user);
+let result = createNewUser();
+console.log(`User: ${result.firstName} ${result.lastName}, Login: ${result.getLogin()}`);
