@@ -51,9 +51,8 @@ let burger = {
     },
 
     getBurgerPrice: ()=>{
-        let size = prompt('Enter  burger size', 'SMALL or LARGE');
-        let stuffing = prompt('Enter  burger stuffing', 'CHEESE or SALAD or BEEF');
-        let CorrectSizeStuffing = burger.validation(size, stuffing);
+        let burgerProps = {size: prompt('Enter  burger size', 'SMALL or LARGE'), stuffing: prompt('Enter  burger stuffing', 'CHEESE or SALAD or BEEF')};
+        let CorrectSizeStuffing = burger.validation(...burgerProps);
         let total = burger.addResult(CorrectSizeStuffing);
         return console.log (`Total price: ${total.price}, Total cal:${total.cal}`);
 
