@@ -9,9 +9,9 @@ let someObject = {
 function cloneObject(objectName) {
     let clonedName ={};
     for (let key in objectName){
-        // if (objectName.hasOwnProperty(key)) {
-            if (typeof key === 'object') {
-                cloneObject(key)
+        // if (objectName.hasOwnProperty([key])) {
+            if (typeof objectName[key]=== 'object') {
+                cloneObject()
             } else {
                 clonedName[key] = objectName[key];
             }
