@@ -1,10 +1,11 @@
 function factorial(n) {
     // return n ? n * factorial(n - 1) : 1;
-
-    while (k === n) {
-
+    let k = 1;
+    while (n != 1) {
+        k = k * n;
+        n--;
     }
-
+    return k;
 
 }
 function checkSimpleNumber(num){
