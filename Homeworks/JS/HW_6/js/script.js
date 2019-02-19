@@ -1,16 +1,16 @@
 function createNewUser(firstName, lastName) {
     let user = {
         createUser:()=>{
-            user.firstName = validateName (prompt('Enter your first name', ''),'first name');
-            user.lastName = validateName (prompt('Enter your last name', ''), 'last name');
+            Object.defineProperty(user, "firstName", { value: validateName (prompt('Enter your first name', ''),'first name'), configurable: true, writable: false, enumerable: true });
+            Object.defineProperty(user, "lastName", {value: validateName (prompt('Enter your last name', ''), 'last name'), configurable: true, writable: false, enumerable: true });
             return user;
         },
         getLogin:()=> {
             let login = user.firstName.charAt(0)+user.lastName.charAt(0);
             return login.toLowerCase()
         },
-        setFirstName: (name)=>{user.firstName = name},
-        setLastName: (name)=>{user.lastName = name},
+        setFirstName: (name)=>{Object.defineProperty(user, "firstName", { value: name, configurable: true, writable: false, enumerable: true })},
+        setLastName: (name)=>{Object.defineProperty(user, "firstName", { value: name, configurable: true, writable: false, enumerable: true })},
     };
     switch (arguments.length){
          case 0:
@@ -34,3 +34,4 @@ function validateName(name, message) {
 
 let result = createNewUser();
 console.log(`User: ${result.firstName} ${result.lastName}, Login: ${result.getLogin()}`);
+console.log (result);
