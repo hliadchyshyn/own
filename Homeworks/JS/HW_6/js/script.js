@@ -5,6 +5,10 @@ function createNewUser(firstName, lastName) {
             user.lastName = validateName (prompt('Enter your last name', ''), 'last name');
             return user;
         },
+        getLogin:()=> {
+            let login = user.firstName.charAt(0)+user.lastName.charAt(0);
+            return login.toLowerCase()
+        },
         setFirstName: (name)=>{user.firstName = name},
         setLastName: (name)=>{user.lastName = name},
     };
@@ -17,16 +21,9 @@ function createNewUser(firstName, lastName) {
              user.setFirstName(firstName);
              user.setLastName (lastName);
              break;
-        default:
-            if (firstName!=undefined) {
-                user.setFirstName(firstName);
-            } else {
-                user.setLastName (lastName);
-            }
-
-    };
+    }
     return user;
-};
+}
 
 function validateName(name, message) {
     while (name === "" || name === null){
