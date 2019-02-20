@@ -10,7 +10,7 @@ function createNewUser(firstName, lastName) {
             return login.toLowerCase()
         },
         setFirstName: (name)=>{Object.defineProperty(user, "firstName", { value: name, configurable: true, writable: false, enumerable: true })},
-        setLastName: (name)=>{Object.defineProperty(user, "firstName", { value: name, configurable: true, writable: false, enumerable: true })},
+        setLastName: (name)=>{Object.defineProperty(user, "lastName", { value: name, configurable: true, writable: false, enumerable: true })},
     };
     switch (arguments.length){
          case 0:
