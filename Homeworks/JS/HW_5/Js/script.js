@@ -1,23 +1,21 @@
 let someObject = {
+    currentDate: new Date(),
+    rights: {isCanRead: true, isCanWrite: true, isCanDelete: true},
     name: 'John',
     age: 30,
-    rights: {isCanRead: true, isCanWrite: true, isCanDelete: true},
-    currentDate: String(new Date()),
 };
-
-// let clone = Object.assign({}, someObject);
 function cloneObject(objectName) {
-    let clonedName ={};
+    let clone = {}
     for (let key in objectName){
-        // if (objectName.hasOwnProperty([key])) {
-            if (typeof objectName[key]=== 'object') {
-                cloneObject()
+        // if (objectName.hasOwnProperty(key)) {
+            if (typeof objectName[key] === 'object') {
+                clone[key]= cloneObject(objectName[key]);
             } else {
-                clonedName[key] = objectName[key];
+                clone[key] = objectName[key];
             }
         // }
     }
-    return clonedName;
+    return clone;
 }
 let clone = cloneObject(someObject);
 console.log(clone);
