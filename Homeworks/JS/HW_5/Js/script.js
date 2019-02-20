@@ -5,13 +5,15 @@ let someObject = {
     age: 30,
 };
 function cloneObject(objectName) {
-    let clone = {}
+    let clone = {};
     for (let key in objectName){
         // if (objectName.hasOwnProperty(key)) {
-            if (typeof objectName[key] === 'object') {
-                clone[key]= cloneObject(objectName[key]);
-            } else {
-                clone[key] = objectName[key];
+        if (typeof objectName[key] === 'object'&& typeof objectName[key].getMonth === 'function') {
+            clone[key]= new Date(objectName[key].getTime())
+        } else if (typeof objectName[key] === 'object') {
+            clone[key]= cloneObject(objectName[key]);
+        } else {
+            clone[key] = objectName[key];
             }
         // }
     }
