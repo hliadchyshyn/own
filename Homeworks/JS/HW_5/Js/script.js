@@ -8,7 +8,7 @@ function cloneObject(objectName) {
     let clone = {};
     for (let key in objectName){
         // if (objectName.hasOwnProperty(key)) {
-        if (typeof objectName[key] === 'object'&& typeof objectName[key].getMonth === 'function') {
+        if (typeof objectName[key] === 'object' && objectName[key] instanceof Date) {
             clone[key]= new Date(objectName[key].getTime())
         } else if (typeof objectName[key] === 'object') {
             clone[key]= cloneObject(objectName[key]);
