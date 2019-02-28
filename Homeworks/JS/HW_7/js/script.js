@@ -29,7 +29,7 @@ function getChinaZodiac(year) {
   return animals[year % animals.length];
 }
 
-let userBirth = new Date (prompt('Enter your Birth Date with mask dd.mm.yyyy', '15.06.1991').split('.').reverse().join(','));
+let userBirth = new Date (prompt('Enter your Birth Date with mask dd.mm.yyyy', 'dd.mm.yyyy').split('.').reverse().join(','));
 let res = ageCalc(userBirth);
 alert(`Your age ${res.age}
 Your zodiac sign is ${res.zodiac}
