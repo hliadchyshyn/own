@@ -20,7 +20,7 @@ function createNewUser(firstName, lastName) {
             return login.toLowerCase()
         },
         set firstName(name){
-            return user.firstName = name
+            return Object.defineProperty(user, "firstName", {value: firstName}
 
         },
         set lastName(name){
