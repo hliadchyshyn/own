@@ -3,12 +3,12 @@ function ageCalc(birth){
     let currentDate = new Date();
     let age = currentDate.getFullYear() - birth.getFullYear();
     if (birth.getMonth() - currentDate.getMonth() > 0 ){
-        userAge.age = age;
+        userAge.age = age-1;
     } else if(birth.getMonth() - currentDate.getMonth() < 0 ){
-        userAge.age = age+1;
+        userAge.age = age;
     } else{
         if (birth.getDate() - currentDate.getDate() >= 0){
-            userAge.age = age+1;
+            userAge.age = age-1;
         } else {
             userAge.age = age;
         }
