@@ -113,7 +113,7 @@ const move = (event) => {
             }
             break;
     }
-}
+};
 
 const stepMode = (event) => {
     if (event.shiftKey){
@@ -121,16 +121,20 @@ const stepMode = (event) => {
             case 49:
                 steps = steps.map((el, index) => {
                     el.isActive = index === 0;
+                    return el;
                 });
+
                 break;
             case 50:
                 steps = steps.map((el, index) => {
                     el.isActive = index === 1;
+                    return el;
                 });
                 break;
             case 51:
                 steps = steps.map((el, index) => {
                     el.isActive = index === 2;
+                    return el;
                 });
                 break;
         }
