@@ -7,26 +7,28 @@ let i = 0;
 for (i;i<n;i++){
     list[i] = '';
 }
-
+let wrapper = document.createElement('div');
+let timer = document.createElement('div');
 let ul = document.createElement('ul');
+
 list.map((index)=>{
     let li = document.createElement("li");
     li.appendChild(document.createTextNode( prompt(`Enter list item ${index}`,"")));
     ul.appendChild(li);
 });
-document.body.appendChild(ul);
-let timer = document.createElement('div');
-timer.setAttribute('id', 'timer');
+wrapper.appendChild(ul);
+let seconds = 10;
+timer.innerHTML = seconds + "s ";
 insertAfter(ul,timer );
 
-let seconds = 10;
-let x = setInterval(()=> {
-        document.getElementById("timer").innerHTML = seconds + "s ";
-        seconds--;
-        if (seconds < 0) {
-            pageClear();
-            clearInterval(x);
-        }
+document.body.appendChild(wrapper);
+let x = setTimeout(function tick(){
+    timer.innerHTML = --seconds + "s ";
+    if (--seconds < 0) {
+        pageClear();
+        clearInterval(x);
+    }
+    x = setTimeout(tick, 1000);
 }, 1000);
 
 
