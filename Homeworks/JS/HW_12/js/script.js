@@ -9,10 +9,12 @@ function addInputForCircle() {
     let fragment = document.createDocumentFragment();
     let diameter = document.createElement('input');
     diameter.setAttribute('id', 'diameter');
+    diameter.setAttribute('placeholder', 'enter diameter');
     diameter.style.display = 'block';
     fragment.appendChild(diameter);
     let color = document.createElement('input');
     color.setAttribute('id', 'color');
+    color.setAttribute('placeholder', 'enter color');
     color.style.display = 'block';
     fragment.appendChild(color);
     let confirmButton = document.createElement('button');
@@ -25,7 +27,7 @@ function addInputForCircle() {
 }
 function drawCircle() {
     let circleDiameter = Number(document.getElementById('diameter').value);
-    let circleColor = `#${document.getElementById('color').value}`;
+    let circleColor = `${document.getElementById('color').value}`;
     let canvas = document.createElement('canvas');
     canvas.setAttribute('id','circle');
     canvas.style.width = circleDiameter*2;
