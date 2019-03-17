@@ -1,4 +1,4 @@
-const mailStorage =
+const mailStorage = [
     {
         subject: "Hello world",
         from: "gogidoe@somemail.nothing",
@@ -21,12 +21,12 @@ const mailStorage =
 
 
 const wrapper = document.getElementById('mail-wrapper');
+
 let currentShowEmail = Number(localStorage.getItem('currentShowEmail'));
 if (!currentShowEmail) {
     localStorage.setItem('currentShowEmail', '1');
     currentShowEmail = Number(localStorage.getItem('currentShowEmail'));
 }
-
 
 let showModal = (email) =>{
     let modalWrapper = document.createElement('div');
@@ -39,13 +39,19 @@ let showModal = (email) =>{
 
     modalWrapper.onclick=(event)=>{
         if(event.target === modalWrapper){
-        modalWrapper.remove();
+            modalWrapper.remove();
         }
     };
-        document.body.insertBefore(modalWrapper, wrapper);
+    document.body.insertBefore(modalWrapper, wrapper);
 };
 
 const showEmailList = () => {
+    const fragment = document.createDocumentFragment();
+
+    mailStorage.forEach((elem) => {
+        let emailItem = document.createElement('div');
+        emailItem.setAttribute('class', 'mail-item');
+
         let subject = document.createElement('h4');
         let from = document.createElement('p');
         let to = document.createElement('p');
@@ -78,7 +84,6 @@ const showEmailList = () => {
     wrapper.appendChild(fragment);
 
 };
-
 const newEmailMOdal = () => {
     let newMailWrapper = document.createElement('div');
     newMailWrapper.className = 'new-email-modal';
@@ -107,7 +112,5 @@ const newEmailMOdal = () => {
 
 showEmailList();
 
-
 let newMailBtn = document.getElementById('new-mail-btn');
 newMailBtn.addEventListener('click', ()=>{setTimeout(newEmailMOdal, 2000)});
-
