@@ -1,4 +1,4 @@
-const mailStorage = [
+const mailStorage =
     {
         subject: "Hello world",
         from: "gogidoe@somemail.nothing",
@@ -42,16 +42,10 @@ let showModal = (email) =>{
         modalWrapper.remove();
         }
     };
-    document.body.insertBefore(modalWrapper, wrapper);
+        document.body.insertBefore(modalWrapper, wrapper);
 };
 
 const showEmailList = () => {
-    const fragment = document.createDocumentFragment();
-
-    mailStorage.forEach((elem) => {
-        let emailItem = document.createElement('div');
-        emailItem.setAttribute('class', 'mail-item');
-
         let subject = document.createElement('h4');
         let from = document.createElement('p');
         let to = document.createElement('p');
