@@ -2,7 +2,7 @@ let n = Number(prompt('Enter number of list items','2'));
 while (isNaN(Number (n))|| n === undefined || n === null){
     n = Number(prompt('Enter correct number of list items', n));
 }
-let list = [];
+let list = [n];
 let i = 0;
 for (i;i<n;i++){
     list[i] = '';
