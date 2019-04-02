@@ -107,7 +107,7 @@ const move = (event) => {
             break;
         case 40:
             packman.style.transform = 'rotate(90deg)';
-            if (+document.documentElement.clientHeight > packman.offsetTop + packman.clientHeight * 1.3) {
+            if (+document.documentElement.clientHeight > packman.offsetTop + packman.clientHeight * 1.4) {
                 curretTop += +step;
                 packman.style.top = `${curretTop}px`;
             }
@@ -139,6 +139,7 @@ const stepMode = (event) => {
                 break;
         }
     }
+    return steps;
 };
 
 const packman = document.getElementById('packman-wrapper');
