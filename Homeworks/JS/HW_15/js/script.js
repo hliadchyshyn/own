@@ -25,6 +25,7 @@ function reset(){
     milliseconds=0;
     hours=0;
     document.getElementById("timer").textContent = "00:00:00:0";
+    startBtn.textContent = 'Start';
 
 }
 function timer() {
