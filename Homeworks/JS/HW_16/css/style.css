@@ -1,0 +1,333 @@
+
+.main-container {
+    height: 100vh;
+    font-family: Verdana, sans-serif, monospace;
+    background: url("../img/rana-sawalha-364253-unsplash.svg") no-repeat;
+    background-size: cover;
+
+}
+
+.header-container {
+    background-color:  rgba(0, 0, 0, 0.41);
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+.header-title {
+    color:  #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 21px;
+    padding-left: 81px;
+    text-transform: uppercase;
+
+}
+
+.header-title:hover{
+    color: #3cb878;
+}
+
+
+.nav-wraper {
+    display: flex;
+    padding-right: 72px;
+}
+
+.ic-caledar {
+    background: url("../img/Sprite.png")-0px -99px no-repeat;
+    overflow: hidden;
+    width: 19px;
+    height: 19px;
+    margin-right: 28px;
+    transition: 0.2s;
+}
+.ic-caledar:hover {
+    background-position: -0px -80px;
+    opacity: 0.6
+}
+.ic-forum {
+    background: url("../img/Sprite.png") -0px -20px no-repeat;
+    overflow: hidden;
+    width: 28px;
+    height: 20px;
+    margin-right: 28px;
+    transition: 0.2s;
+}
+.ic-forum:hover {
+    background-position: -0px -0px;
+    opacity: 0.6
+}
+.ic-journey {
+    background: url("../img/Sprite.png")  -0px -60px no-repeat;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    transition: 0.2s
+}
+.ic-journey:hover {
+    background-position: -0px -40px;
+    opacity: 0.6
+}
+
+.hr-vertical-header{
+    width: 1px;
+    height: 21px;
+    border-left: 1px solid rgba(255,255,255, 0.1);
+    margin: 0 25px 0 25px;
+}
+
+.msg {
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.log-in, .sign-up {
+    color:  #3cb878;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.log-in:hover, .sign-up:hover {
+    text-decoration: underline;
+}
+
+.content-wraper{
+    display: flex;
+    height: calc(100vh - 54px);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-wraper{
+    display: flex;
+    width: 444px;
+    height: 585px;
+    background-color: #fff;
+    border-radius: 12px;
+    flex-direction: column;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.52);
+
+}
+
+.square{
+    width: 18px;
+    height: 18px;
+    background-color: #3cb878;
+    margin-top: 26px;
+    float: left;
+}
+.form-title{
+    float: left;
+    color: #434343;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 23px;
+    padding-left: 57px;
+}
+.log-in-link{
+    float: right;
+    margin-top: 27px;
+    padding-right: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3cb878;
+}
+.log-in-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.social-button{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.facebook{
+    background-color: #305db8;
+    color: white;
+    padding: 9px 13px;
+    line-height: 21px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.facebook-img{
+    margin: 4px 10px;
+    float: left;
+}
+.facebook-title{
+    display: inline-block;
+    margin-top: 2px;
+    padding-left: 16px;
+    padding-right: 7px;
+}
+.hr-vertical-facebook{
+    width: 1px;
+    height: 28px;
+    border-left: 1px solid #2852a5;
+    /* border-left-color: #222f3a; */
+    float: left;
+    margin-left: 6px;
+}
+.google{
+    background-color: #dd472e;
+    color: white;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.google-img{
+    float: left;
+    margin-top: 6px;
+    margin-left: 7px;
+    margin-right: 30px;
+}
+.google-title{
+    display: inline-block;
+    margin-top: 2px;
+    padding-left: 2px;
+    padding-right: 21px;
+    margin-right: -3px;
+}
+.hr-vertical-google{
+    width: 1px;
+    height: 28px;
+    border-left: 1px solid #c74029;
+    float: left;
+    margin-left: -23px;
+}
+
+.divider-wraper{
+    margin: 27px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hr-left{
+    border-bottom: 1px solid #eaeaea;;
+    width: 135px;
+}
+.hr-right{
+    border-bottom: 1px solid #eaeaea;;
+    width: 135px;
+}
+.or{
+    display: inline-block;
+    margin: 0 15px 0 15px;
+    font-size: 14px;
+    color:  #848484;
+    font-weight: 400;
+    line-height: 21px;
+}
+.form-content{
+    display: flex;
+    justify-content: center;
+}
+.text-input{
+    /*padding: 13px;*/
+    padding-left: 13px;
+    margin: 11px 50px 0 50px;
+    width: 300px;
+    height: 42px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+
+}
+.text-input:focus{
+    color: #434343;
+    background-color:  #ffffff;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.21);
+    transition: 0.6;
+}
+::-webkit-input-placeholder{
+    color:  #bebebe;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+.submit-button{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    width: 322px;
+    height: 46px;
+    margin-left: 52px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3cb878;
+    cursor: pointer;
+}
+.terms{
+    color: #3cb878;
+    text-decoration: none;
+}
+.terms:hover{
+    text-decoration: underline;
+}
+.control {
+    position: relative;
+    padding-left: 30px;
+    margin: 0 0 24px 53px;
+    padding-top: 3px;
+    cursor: pointer;
+    color:  #434343;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.control input {
+    position: absolute;
+    opacity: 0;
+}
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.control_indicator::after {
+    content: '';
+    left: 5px;
+    top: 2px;
+    width: 4px;
+    height: 8px;
+    border: solid #3cb878;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+    box-sizing: unset;
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+
+
+.change-color-btn{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    width: 150px;
+    height: 30px;
+    margin-right: 52px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3cb878;
+    cursor: pointer;
+}
