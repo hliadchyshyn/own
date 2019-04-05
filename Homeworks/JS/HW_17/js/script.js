@@ -25,7 +25,7 @@ function addInputForCircle() {
 function drawCircle() {
     let circleDiameter = Number(document.getElementById('diameter').value);
     let circleColor = `${document.getElementById('color').value}`;
-    let canvas = $('<canvas id="circle"></canvas>');
+    let canvas = $(`<canvas id="circle" width="${circleDiameter*3}" height="${circleDiameter*3}"></canvas>`);
     let context = $(canvas)[0].getContext('2d');
     let centerX = context.canvas.width / 2;
     let centerY = context.canvas.height / 2;
